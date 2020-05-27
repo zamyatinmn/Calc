@@ -1,0 +1,16 @@
+.button{
+    -fx-background-color: darkslateblue;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-size: 2;
+}
+
+.button:hover{
+    -fx-background-color: darkviolet;
+    -fx-border-color: white;
+}
+
+.text-field{
+    -fx-background-color: gray;
+    -fx-background-radius: 0;
+}

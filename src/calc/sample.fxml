@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Box?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="calc.Controller">
+    <stylesheets>
+        <URL value="@/css/style.css"/>
+    </stylesheets>
+    <TextField fx:id="upperField" editable="false"/>
+    <TextField fx:id="lowerField" editable="false" promptText="0"/>
+    <HBox>
+        <VBox>
+            <GridPane>
+                <Button text="←" onAction="#btnBack" GridPane.columnIndex="0" GridPane.rowIndex="0" prefWidth="50" prefHeight="50"/>
+                <Button text="7" onAction="#btnSeven" GridPane.columnIndex="0" GridPane.rowIndex="1" prefWidth="50" prefHeight="50"/>
+                <Button text="4" onAction="#btnFour" GridPane.columnIndex="0" GridPane.rowIndex="2" prefWidth="50" prefHeight="50"/>
+                <Button text="1" onAction="#btnOne" GridPane.columnIndex="0" GridPane.rowIndex="3" prefWidth="50" prefHeight="50"/>
+                <Button text="CE" onAction="#btnClearAll" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="50" prefHeight="50"/>
+                <Button text="8" onAction="#btnEight" GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="50" prefHeight="50"/>
+                <Button text="5" onAction="#btnFive" GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="50" prefHeight="50"/>
+                <Button text="2" onAction="#btnTwo" GridPane.columnIndex="1" GridPane.rowIndex="3" prefWidth="50" prefHeight="50"/>
+                <Button text="C" onAction="#btnClear" GridPane.columnIndex="2" GridPane.rowIndex="0" prefWidth="50" prefHeight="50"/>
+                <Button text="9" onAction="#btnNine" GridPane.columnIndex="2" GridPane.rowIndex="1" prefWidth="50" prefHeight="50"/>
+                <Button text="6" onAction="#btnSix" GridPane.columnIndex="2" GridPane.rowIndex="2" prefWidth="50" prefHeight="50"/>
+                <Button text="3" onAction="#btnThree" GridPane.columnIndex="2" GridPane.rowIndex="3" prefWidth="50" prefHeight="50"/>
+                <Button text="±" onAction="#btnInverse" GridPane.columnIndex="3" GridPane.rowIndex="0" prefWidth="50" prefHeight="50"/>
+                <Button text="/" onAction="#btnDivision" GridPane.columnIndex="3" GridPane.rowIndex="1" prefWidth="50" prefHeight="50"/>
+                <Button text="*" onAction="#btnMultiple" GridPane.columnIndex="3" GridPane.rowIndex="2" prefWidth="50" prefHeight="50"/>
+                <Button text="-" onAction="#btnMinus" GridPane.columnIndex="3" GridPane.rowIndex="3" prefWidth="50" prefHeight="50"/>
+            </GridPane>
+            <HBox>
+                <Button text="0" onAction="#btnZero" prefWidth="100" prefHeight="50"/>
+                <Button text="," onAction="#btnDecimal" prefWidth="50" prefHeight="50"/>
+                <Button text="+" onAction="#btnPlus" prefWidth="50" prefHeight="50"/>
+            </HBox>
+        </VBox>
+        <GridPane>
+            <Button text="=" onAction="#btnResult" GridPane.columnIndex="0" GridPane.rowIndex="3" prefWidth="50" prefHeight="250"/>
+        </GridPane>
+    </HBox>
+
+
+</VBox>
